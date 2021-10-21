@@ -1,0 +1,86 @@
+{
+  "app": {
+    "bundleName": "com.arvin.petitebookkeeping",
+    "vendor": "arvin",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.arvin.petitebookkeeping",
+    "name": ".MyApplication",
+    "mainAbility": "com.arvin.petitebookkeeping.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": true
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "actions": [
+
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.arvin.petitebookkeeping.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "formsEnabled": true,
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "forms": [
+          {
+            "landscapeLayouts": [
+              "$layout:form_image_with_information_widget_2_2"
+            ],
+            "isDefault": true,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "widget",
+            "description": "This is a service widget",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*2"
+            ],
+            "portraitLayouts": [
+              "$layout:form_image_with_information_widget_2_2"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          }
+        ],
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.register"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.arvin.petitebookkeeping.LoginAbility",
+        "icon": "$media:icon",
+        "description": "$string:loginability_description",
+        "label": "$string:entry_LoginAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
