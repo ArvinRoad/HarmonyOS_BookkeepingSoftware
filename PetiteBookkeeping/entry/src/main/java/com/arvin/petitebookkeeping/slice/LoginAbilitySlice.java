@@ -33,7 +33,7 @@ public class LoginAbilitySlice extends AbilitySlice {
                 Intent intent = new Intent();
                 Operation operation = new Intent.OperationBuilder()
                         .withDeviceId("")
-                        .withBundleName("com.arvin.PetiteBookkeeping")
+                        .withBundleName("com.arvin.petitebookkeeping")
                         .withAbilityName("MainAbility")
                         .build();
 
