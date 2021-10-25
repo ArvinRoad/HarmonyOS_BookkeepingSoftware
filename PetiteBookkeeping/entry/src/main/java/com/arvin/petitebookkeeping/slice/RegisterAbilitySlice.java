@@ -8,7 +8,7 @@ import ohos.agp.components.Component;
 import ohos.agp.components.TextField;
 
 public class RegisterAbilitySlice extends AbilitySlice {
-    TextField tfUsername;
+
     Button btnRegister,btnCancel;
 
     @Override
@@ -18,27 +18,23 @@ public class RegisterAbilitySlice extends AbilitySlice {
         initComponent();
     }
 
-    private void initComponent(){
-        tfUsername = (TextField) findComponentById(ResourceTable.Id_tf_username);
+    private void initComponent() {
         btnRegister = (Button) findComponentById(ResourceTable.Id_btn_register);
+        btnCancel = (Button) findComponentById(ResourceTable.Id_btn_cancel);
         btnRegister.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-                String username = tfUsername.getText().toString();
-                Intent intent = new Intent();
-                intent.setParam("username",username);
-                present(new LoginAbilitySlice(),intent);
+
             }
         });
 
-        btnCancel = (Button) findComponentById(ResourceTable.Id_btn_cancel);
         btnCancel.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-                present(new LoginAbilitySlice(),new Intent());
+                Intent intent = new Intent();
+                present(new LoginAbilitySlice(),intent);
             }
         });
-
     }
 
     @Override

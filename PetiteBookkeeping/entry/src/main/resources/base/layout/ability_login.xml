@@ -4,47 +4,54 @@
     ohos:height="match_parent"
     ohos:width="match_parent"
     ohos:alignment="center"
-    ohos:padding="10vp"
+    ohos:background_element="#FFC0CB"
+    ohos:padding="15vp"
     ohos:orientation="vertical">
 
-    <Text
-        ohos:id="$+id:text_helloworld"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:background_element="$graphic:background_ability_login"
-        ohos:layout_alignment="horizontal_center"
-        ohos:text="登录界面"
-        ohos:text_size="40vp"
-        />
+    <Image
+        ohos:id="$+id:img_logo"
+        ohos:height="120vp"
+        ohos:width="120vp"
+        ohos:scale_mode="stretch"
+        ohos:background_element="$graphic:background_ability_image"
+        ohos:image_src="$media:icon"/>
 
     <TextField
         ohos:id="$+id:tf_username"
         ohos:height="match_content"
         ohos:width="match_parent"
-        ohos:top_margin="20vp"
         ohos:hint="请输入用户名"
-        ohos:background_element="$graphic:background_text_field"
-        ohos:text_size="25fp"
-        />
+        ohos:padding="5vp"
+        ohos:background_element="$graphic:background_ability_text_field"
+        ohos:top_margin="10vp"
+        ohos:text_size="25fp"/>
+
+    <TextField
+        ohos:id="$+id:pwd"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:hint="请输入密码"
+        ohos:padding="5vp"
+        ohos:background_element="$graphic:background_ability_text_field"
+        ohos:top_margin="10vp"
+        ohos:text_size="25fp"/>
     
     <Button
         ohos:id="$+id:btn_login"
-        ohos:height="30vp"
+        ohos:height="40vp"
         ohos:width="150vp"
-        ohos:text_size="20fp"
-        ohos:text_color="#fff"
-        ohos:top_margin="20vp"
-        ohos:background_element="$graphic:background_button"
+        ohos:top_margin="10vp"
+        ohos:text_size="25fp"
+        ohos:background_element="$graphic:background_ability_button"
         ohos:text="登录"/>
 
     <Button
         ohos:id="$+id:btn_register"
-        ohos:height="30vp"
+        ohos:height="40vp"
         ohos:width="150vp"
-        ohos:text_size="20fp"
-        ohos:text_color="#fff"
-        ohos:top_margin="20vp"
-        ohos:background_element="$graphic:background_button"
+        ohos:top_margin="10vp"
+        ohos:text_size="25fp"
+        ohos:background_element="$graphic:background_ability_button"
         ohos:text="注册"/>
 
 </DirectionalLayout>
